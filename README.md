@@ -16,7 +16,7 @@ Users should be able to:
 - See an order confirmation modal after checking out with an order summary
 - Keep track of what's in the cart, even after refreshing the browser (`localStorage`)
 
-#### Live: https://entertainment-app-effip24.netlify.app/
+#### Live: https://audiophile-effip.netlify.app/
 
 #### Technologies and Techniques
 
@@ -41,7 +41,7 @@ Users should be able to:
 ### run the project locally:
 
 ```
-git clone https://audiophile-effip.netlify.app/
+git clone https://github.com/effip24/audiophile-ecommerce.git
 ```
 
 ```
