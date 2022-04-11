@@ -41,7 +41,7 @@ Users should be able to:
 ### run the project locally:
 
 ```
-git clone https://github.com/effip24/audiophile-ecommerce.git
+git clone https://audiophile-effip.netlify.app/
 ```
 
 ```
@@ -54,5 +54,4 @@ npm install
 
 ```
 npm run start
-
 ```
