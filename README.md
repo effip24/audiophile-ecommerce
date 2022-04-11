@@ -47,7 +47,7 @@ git clone https://github.com/effip24/audiophile-ecommerce.git
 ```
 cd audiophile-ecommerce
 ```
-  
+
 ```
 npm install
 ```
@@ -56,6 +56,9 @@ npm install
 npm run start
 <<<<<<< HEAD
 ```
+
 =======
+
 ```
 >>>>>>> da5312bd831c78def8d23add22bfc58dac9d4879
+```
