@@ -1,0 +1,44 @@
+.speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+  width: 100%;
+}
+
+.speakers__title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #000000;
+  padding: 195px 0 97px 0;
+  box-sizing: border-box;
+}
+
+.speakers__title {
+  width: 100%;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  /* identical to box height, or 110% */
+  text-align: center;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .speakers__title-wrap {
+    padding: 122px 0 32px 0;
+  }
+
+  .speakers__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

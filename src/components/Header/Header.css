@@ -1,0 +1,157 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 3;
+  background: #000000;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1110px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 35px 0;
+  box-sizing: border-box;
+  mix-blend-mode: normal;
+}
+
+.header__inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo-container {
+  display: flex;
+  flex-basis: 769px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+}
+
+.header__mobile {
+  display: none;
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header__logo {
+  width: 143px;
+  height: 25px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header__cart-wrap {
+  position: relative;
+}
+
+.header__cart-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d87d4a;
+  margin: 0 auto;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.header__cart-icon {
+  width: 23px;
+  height: 20px;
+  object-fit: contain;
+  object-position: center;
+}
+.header__cart-icon:hover {
+  cursor: url("../../images/assets/shared/desktop/Pointer.svg"), pointer;
+}
+.header__cart-icon_animated {
+  animation: addToCart 2s ease 0s 1 normal forwards;
+}
+
+.header__navigation-mobile {
+  display: none;
+  align-self: start;
+}
+
+@media screen and (max-width: 1440px) {
+  .header__container {
+    max-width: 768px;
+  }
+  .header__mobile {
+    display: flex;
+  }
+
+  .header__navigation-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    padding: 32px 24px;
+  }
+
+  .header__logo-wrap {
+    gap: 76px;
+  }
+}
+
+@keyframes addToCart {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}

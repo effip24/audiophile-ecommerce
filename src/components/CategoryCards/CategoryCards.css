@@ -1,0 +1,159 @@
+.category-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.category-cards__cards-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category-cards__cards-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 350px;
+  min-height: 204px;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.category-cards__card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.category-cards__card-img_type_headphones {
+  max-width: 122px;
+  max-height: 160px;
+  bottom: 124px;
+  background-image: url("../../images/assets/shared/desktop/image-category-thumbnail-headphones.png");
+}
+.category-cards__card-img_type_speakers {
+  max-width: 121px;
+  height: 146px;
+  bottom: 130px;
+  background-image: url("../../images/assets/shared/desktop/image-category-thumbnail-speakers.png");
+}
+.category-cards__card-img_type_earphones {
+  max-width: 125px;
+  height: 126px;
+  bottom: 137px;
+  background-image: url("../../images/assets/shared/desktop/image-category-thumbnail-earphones.png");
+}
+
+.category-cards__card-title {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+
+.category-cards__card-link-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.category-cards__card-link-wrap:hover {
+  cursor: url("../../images/assets/shared/desktop/Pointer.svg"), pointer;
+}
+
+.category-cards__card-link-label {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.category-cards__card-link-icon {
+  display: block;
+  width: 5px;
+  height: 10px;
+  background-image: url("../../images/assets/shared/desktop/icon-arrow-right.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .category-cards__cards-list {
+    gap: 10px;
+  }
+  .category-cards__cards-item {
+    max-width: 223px;
+    min-height: 165px;
+  }
+  .category-cards__card-img_type_headphones {
+    width: 79px;
+    height: 104px;
+    bottom: 113px;
+  }
+  .category-cards__card-img_type_speakers {
+    width: 84px;
+    height: 101px;
+    bottom: 115px;
+  }
+  .category-cards__card-img_type_earphones {
+    width: 103px;
+    height: 104px;
+    bottom: 113px;
+  }
+  .category-cards__card-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-cards__cards-list {
+    flex-direction: column;
+    gap: 68px;
+  }
+  .category-cards__cards-item {
+    max-width: 327px;
+  }
+
+  .category-cards__card-img_type_speakers {
+    bottom: 116px;
+  }
+  .category-cards__card-img_type_earphones {
+    bottom: 116px;
+  }
+  .category-cards__card-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

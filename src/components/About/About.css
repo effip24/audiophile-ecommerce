@@ -1,0 +1,126 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.about__contianer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 125px;
+  width: 100%;
+  max-width: 1110px;
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 445px;
+}
+
+.about__title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  /* or 110% */
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  text-align: start;
+}
+
+.about__title_orange {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  /* or 110% */
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #d87d4a;
+}
+
+.about__text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin: 0;
+  text-align: start;
+}
+
+.about__img {
+  width: 100%;
+  height: 588px;
+  background-image: url("../../images/assets/shared/desktop/image-best-gear.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1440px) {
+  .about__contianer {
+    flex-direction: column-reverse;
+    gap: 63px;
+    max-width: 689px;
+  }
+
+  .about__info {
+    flex-direction: column;
+    gap: 32px;
+    max-width: 573px;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+
+  .about__title_orange {
+    text-align: center;
+  }
+
+  .about__img {
+    height: 300px;
+    background-image: url("../../images/assets/shared/tablet/image-best-gear.jpg");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__contianer {
+    max-width: 327px;
+    gap: 40px;
+  }
+
+  .about__info {
+    max-width: 100%;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about__title_orange {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about__img {
+    background-image: url("../../images/assets/shared/mobile/image-best-gear.jpg");
+  }
+}

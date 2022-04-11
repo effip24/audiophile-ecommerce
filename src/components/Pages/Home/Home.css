@@ -1,0 +1,264 @@
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 200px 0 168px 0;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 200px;
+  gap: 48px;
+}
+
+.feature__speaker-zx-nine {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1110px;
+  border-radius: 8px;
+  background-color: #d87d4a;
+  overflow: hidden;
+  padding: 133px 95px 124px 0;
+  box-sizing: border-box;
+}
+
+.feature__speaker-zx-nine-cover {
+  position: absolute;
+  width: 100%;
+  max-width: 944px;
+  height: 100%;
+  max-height: 944px;
+  right: 315px;
+  background-image: url("../../../images/assets/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.feature__speaker-zx-nine-img {
+  position: absolute;
+  left: 117px;
+  bottom: -10px;
+  width: 100%;
+  height: 100%;
+  max-width: 410px;
+  max-height: 493px;
+  background-image: url("../../../images/assets/home/desktop/image-speaker-zx9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.feature__speaker-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 349px;
+  z-index: 3;
+}
+
+.feature__speaker-zx-nine-title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  /* or 104% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: start;
+  color: #ffffff;
+}
+
+.feature__speaker-zx-nine-text {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  text-align: start;
+  margin: 24px 0 40px 0;
+  opacity: 0.75;
+}
+
+.feature__speaker-zx-nine-button {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000;
+  border: 0;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.feature__speaker-zx-nine-button:hover {
+  background: #4c4c4c;
+  cursor: url("../../../images/assets/shared/desktop/Pointer.svg"), pointer;
+}
+
+.feature__speaker-zx-seven {
+  width: 100%;
+  max-width: 1110px;
+  border-radius: 8px;
+  background-image: url("../../../images/assets/home/desktop/image-speaker-zx7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 101px 101px 101px 95px;
+  box-sizing: border-box;
+}
+
+.feature__speaker-zx-seven-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+}
+
+.feature__speaker-zx-seven-title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: start;
+  margin: 0;
+}
+
+.feature__speaker-zx-seven-button {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  background: transparent;
+  padding: 15px 30px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.feature__speaker-zx-seven-button:hover {
+  color: #ffffff;
+  background: #000000;
+  cursor: url("../../../images/assets/shared/desktop/Pointer.svg"), pointer;
+}
+
+.about {
+  margin-bottom: 200px;
+}
+
+@media screen and (max-width: 1440px) {
+  .categories {
+    margin: 148px 0 96px 0;
+  }
+
+  .feature {
+    margin-bottom: 96px;
+  }
+  .feature__speaker-zx-nine {
+    padding: 353px 169px 64px 169px;
+    max-width: 689px;
+    height: 720px;
+  }
+  .feature__speaker-zx-seven {
+    max-width: 689px;
+    padding: 101px 101px 101px 62px;
+    background-image: url("../../../images/assets/home/tablet/image-speaker-zx7.jpg");
+  }
+  .feature__speaker-zx-nine-cover {
+    top: -288px;
+    right: 0;
+    left: 0;
+  }
+  .feature__speaker-zx-nine-img {
+    top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 197px;
+    max-height: 237px;
+    background-image: url("../../../images/assets/home/tablet/image-speaker-zx9.png");
+  }
+  .feature__speaker-info {
+    align-items: center;
+  }
+  .feature__speaker-zx-nine-title {
+    text-align: center;
+  }
+  .feature__speaker-zx-nine-text {
+    text-align: center;
+  }
+
+  .about {
+    margin-bottom: 96px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    margin: 92px 0 120px 0;
+  }
+
+  .feature {
+    margin-bottom: 120px;
+    gap: 24px;
+  }
+  .feature__speaker-zx-nine {
+    padding: 294px 24px 55px 24px;
+    max-width: 327px;
+    height: 600px;
+  }
+  .feature__speaker-zx-seven {
+    max-width: 327px;
+    padding: 101px 101px 101px 62px;
+    background-image: url("../../../images/assets/home/tablet/image-speaker-zx7.jpg");
+  }
+  .feature__speaker-zx-nine-cover {
+    top: 0;
+  }
+  .feature__speaker-zx-nine-img {
+    background-image: url("../../../images/assets/home/mobile/image-speaker-zx9.png");
+    max-width: 172px;
+    max-height: 207px;
+    top: 55px;
+  }
+  .feature__speaker-info {
+    max-width: 280px;
+  }
+  .feature__speaker-zx-nine-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .about {
+    margin-bottom: 120px;
+  }
+}

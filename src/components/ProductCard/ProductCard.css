@@ -1,0 +1,115 @@
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1110px;
+  gap: 125px;
+}
+.product-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.product_card__img {
+  height: 550px;
+  width: 540px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-card__info {
+  display: flex;
+  width: 100%;
+  max-width: 445px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  text-align: start;
+}
+
+.product-card__name {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  /* or 110% */
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  text-align: start;
+}
+
+.product-card__description {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.product-card__button {
+  background: #d87d4a;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 31px;
+  box-sizing: border-box;
+  border: 0;
+  text-decoration: none;
+}
+.product-card__button:hover {
+  background: #fbaf85;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .product-card {
+    flex-direction: column;
+    gap: 52px;
+    max-width: 689px;
+  }
+  .product-card:nth-child(even) {
+    flex-direction: column;
+  }
+  .product_card__img {
+    width: 100%;
+  }
+  .product-card__info {
+    max-width: 100%;
+    align-items: center;
+  }
+  .product-card__name {
+    text-align: center;
+  }
+  .product-card__description {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-card {
+    gap: 32px;
+    max-width: 327px;
+  }
+  .product_card__img {
+    height: 352px;
+  }
+  .product-card__name {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

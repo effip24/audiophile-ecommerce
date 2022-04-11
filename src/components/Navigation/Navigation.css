@@ -1,0 +1,46 @@
+.navigation__list-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 34px;
+}
+
+.navigation__list-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.navigation__link {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  /* identical to box height, or 192% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navigation__link:hover {
+  color: #d87d4a;
+  cursor: url("../../images/assets/shared/desktop/Pointer.svg"), pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation__list-desktop {
+    flex-direction: column;
+    gap: 16;
+  }
+}

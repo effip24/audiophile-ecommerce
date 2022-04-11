@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("manrope-variablefont_wght-webfont.woff2") format("woff2"),
+    url("manrope-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-weight: 700;
+  src: url("Manrope-Bold.ttf");
+
+  font-style: normal;
+}
