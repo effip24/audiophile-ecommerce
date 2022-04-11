@@ -28,11 +28,6 @@ Users should be able to:
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="40" height="40"/>
- 
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="express js" width="40" height="40"/>
-
-<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_plain_wordmark_logo_icon_146423.png" alt="mongoDB" width="40" height="40"/>
-
 </p>
 
 ```
@@ -50,7 +45,7 @@ git clone https://github.com/effip24/audiophile-ecommerce.git
 ```
 
 ```
-cd ../frontend
+cd audiophile-ecommerce
 ```
   
 ```
