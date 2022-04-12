@@ -2,7 +2,7 @@
 
 An e-commerce website with a beutiful design.
 
-Users should be able to:
+Users able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
