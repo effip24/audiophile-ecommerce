@@ -1,12 +1,12 @@
 import "./Header.css";
 
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
+
+import Navigation from "../Navigation/Navigation";
 import logo from "../../images/assets/shared/desktop/logo.svg";
 import cart from "../../images/assets/shared/desktop/icon-cart.svg";
 import mobile from "../../images/assets/shared/tablet/icon-hamburger.svg";
-
-import Navigation from "../Navigation/Navigation";
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 const Header = ({ onCartClick, cartItems }) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -23,7 +23,7 @@ const Header = ({ onCartClick, cartItems }) => {
     <header
       className="header"
       style={{
-        backgroundColor: `${isHome ? "transparent" : ""}`,
+        backgroundColor: `${isHome && !isMobile ? "transparent" : ""}`,
         position: `${isHome ? "absolute" : "fixed"}`,
       }}
     >
@@ -65,7 +65,7 @@ const Header = ({ onCartClick, cartItems }) => {
           className="header__navigation-mobile"
           style={{ display: `${isMobile ? "flex" : "none"}` }}
         >
-          <Navigation isMobile={isMobile} />
+          <Navigation isMobile={isMobile} onClose={handleMobileClick} />
         </div>
       </div>
     </header>

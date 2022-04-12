@@ -141,7 +141,6 @@ function App() {
   };
 
   const calculateTotalPrice = (c = cart) => {
-    console.log(cart);
     let sum = 0;
     c.forEach((p) => (sum += p.total));
     setTotalPrice(sum);
