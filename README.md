@@ -32,13 +32,9 @@ Users should be able to:
 
 ```
   BEM, CSS Flexbox and Grid, JavaScript, ReactJS
-
-  The website is fully responsive and has a design at the following breakpoints
-
-  1024, 768, 425, 320
 ```
 
-### run the project locally:
+### run the project:
 
 ```
 git clone https://github.com/effip24/audiophile-ecommerce.git
